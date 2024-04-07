@@ -1,0 +1,7 @@
+pip~=24.0
+wheel~=0.41.2
+setuptools~=68.2.0
+asyncio~=3.4.3
+aiohttp~=3.9.3
+pandas~=2.2.1
+numpy~=1.26.4
