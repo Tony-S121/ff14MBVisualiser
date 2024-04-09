@@ -1,5 +1,4 @@
-from client import Client
-from apis import APICalls
+from apiclient import APICalls, Client
 import pandas as pd
 import asyncio
 import json
