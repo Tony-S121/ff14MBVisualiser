@@ -7,6 +7,11 @@ class Client:
         self.apiKey = api_key
         self.base_url = base_url
 
+    async def check_endpoint(self, endpoint):
+        async with ClientSession() as session:
+            async with session.get(f"{self.base_url}/{endpoint}") as response:
+                return response.status
+
     async def fetch_data(self, endpoint):
         async with ClientSession() as session:
             async with session.get(f"{self.base_url}/{endpoint}") as response:

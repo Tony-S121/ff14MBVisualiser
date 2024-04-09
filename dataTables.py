@@ -5,8 +5,8 @@ import json
 
 
 async def get_world_data():
-    client = Client(base_url='https://universalis.app/api/v2')
-    api_caller = APICalls(client)
+    universalis_client = Client(base_url='https://universalis.app/api/v2')
+    api_caller = APICalls(universalis_client)
     return await api_caller.get_worlds()
 
 
